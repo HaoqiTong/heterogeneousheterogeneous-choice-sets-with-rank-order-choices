@@ -1,17 +1,12 @@
 # sample code for rank order choices
 
 # packages
-# install.packages('EnvStats')
-# install.packages('matrixStats')
-# install.packages('combinat')
-# install.packages('rje')
-# install.packages('vctrs')
-library(vctrs)
-library(pracma)
-library(rje)
-library(combinat)
-library(EnvStats)
-library(matrixStats)
+if (!require("vctrs")) install.packages("vctrs"); library(vctrs)
+if (!require("pracma")) install.packages("pracma"); library(pracma)
+if (!require("rje")) install.packages("rje"); library(rje)
+if (!require("combinat")) install.packages("combinat"); library(combinat)
+if (!require("EnvStats")) install.packages("EnvStats"); library(EnvStats)
+if (!require("matrixStats")) install.packages("matrixStats"); library(matrixStats)
 
 n                            <- 1000                    #number of observations
 size_of_choice_set           <- 3                       #number of alternatives
